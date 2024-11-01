@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+         * {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    }
+    .navbar {
+    background-color:  rgb(89, 150, 214);
+    height: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .an {
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    }
+    .field {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .name-field {
+        margin-left: 50px;
+        margin-right: 50px;  
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+    text-align: center;
+    background-color: rgb(89, 150, 214);
+    margin: 2em;
+    position: relative;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="nav-logo">
+            <a href="#" class="logo"><img src="Screenshot 2024-10-12 230817.png" alt="logo" /></a>
+  
+            <a href="index.html" class="an">HOME</a>
+            <a href="about.html" class="an">ABOUT</a>
+            <a href="portfolio.html" class="an">PORTFOLIO</a>
+            <a href="contact.html" class="an">CONTACT</a>
+          </div>
+        </div>
+      </header>
+      <br>
+      <br>
+      <section>
+        <form>
+            <fieldset class="name-field">
+              <legend>Your Details:</legend>
+              <label for="name">Name: </label>
+              <input type="text" id="name" name="name" required />
+              <br />
+              <br>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" required />
+            </fieldset>
+            <br>
+            <fieldset class="field">
+                <legend>Your Review:</legend>
+                <br>
+                <label for="about">How did you hear about us?</label>
+                <select name="about" id="about" aria-placeholder="Google">
+                    <option value="Google">Google</option>
+                </select>
+                <br>
+                <br>
+                <label for="conf" name="conf">Would you visit again?</label>
+                <input type="radio" name="conf">Yes
+                <input type="radio" name="conf">No
+                <input type="radio" name="conf">Maybe
+                <br>
+                <br>
+                <textarea name="comment" id="comment">Comments:</textarea>
+                <br>
+                <br>
+                <input type="checkbox" name="mark" id="mark">
+                <label for="mark" name="mark" id="mark">Sign me up for email updates</label>
+                <br>
+                <button>Submit review</button>
+            </fieldset>
+    
+      </section>
+      <br>
+      <br>
+      <section>
+        <div class="container">
+            <img class="map" src="Screenshot 2024-10-12 225607.png" alt="">
+        </div>
+      </section>
+      <br> 
+    <footer>
+        <p>Copyright © 2019. All rights reserved.</p>
+    </footer>
+</body>
+</html>
